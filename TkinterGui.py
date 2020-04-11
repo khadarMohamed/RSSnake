@@ -24,7 +24,12 @@ class TkinterGui:
         self.root.title("RSS News Feed")
         self.label_ticker.grid(row=0, column=0)
         self.button_exit.grid(row=0, column=1)
-       
+
+    def update(self, headline, url):
+        """ This should update the news headline """
+        self.label_ticker.configure(text=headline)
+        self.label_ticker.bind("<Button-1>", lambda e: webbrowser.open_new(url))
+    
 
 
 
