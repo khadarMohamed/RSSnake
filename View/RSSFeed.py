@@ -3,7 +3,6 @@ from tkinter import *
 from urllib.request import urlopen
 import webbrowser
 import lxml
-from pip._internal import self_outdated_check
 
 class Feed:
     def __init__(self, parent):
