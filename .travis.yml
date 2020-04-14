@@ -4,6 +4,6 @@ install:
   - pip install beautifulsoup4
   - pip install lxml
 
-script: python View/RSSFeed.py
+script: python RSSFeed.py
 services:
   - xvfb
