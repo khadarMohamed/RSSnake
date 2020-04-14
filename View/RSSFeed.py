@@ -47,4 +47,7 @@ if __name__ == "__main__":
     root = Tk()
     timer = Feed(root)
     root.overrideredirect(True)
+    #FOR TESTING PURPOSES ONLY, REMOVE BEFORE FINAL MERGE
+    root.after(1000, root.destroy)
+    #############################
     root.mainloop()
