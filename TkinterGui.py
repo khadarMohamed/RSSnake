@@ -7,7 +7,9 @@ import webbrowser
 from tkinter import ttk # using tkinter.tkk is to seperate the code implementing a widget's
                         # behavior from the code implementing its appearance
 
+
 class TkinterGui:
+
 
     def __init__(self):
         self.root = tkinter.Tk()
@@ -16,6 +18,7 @@ class TkinterGui:
         self.button_exit.configure(text="quit", command=self.root.quit)
         self.build()
         self.start()
+
 
     def start(self):
         self.root.mainloop()

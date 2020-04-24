@@ -1,6 +1,7 @@
 from urllib.request import urlopen
 import ssl
 import os
+import random
 from bs4 import BeautifulSoup # pip install beautifulsoup4
 
 
@@ -20,5 +21,6 @@ def build_library(page):
     for item in top_stories:
         lib_item = [item.title.text, item.link.text]
         library.append(lib_item)
+    random.shuffle(library)
     return library
                                         
